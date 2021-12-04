@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="プログラミング学習">
+    <title>HTML課題その2</title>
+    <link rel="stylesheet" href="css/stylesheet1.css">
+</head>
+
+<body>
+    <main>
+        <h1>コース一覧</h1>
+        <table>
+            <tr>
+                <th>コース</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+            <tr>
+                <th>前菜</th>
+                <td>アヒージョ</td>
+                <td>アクアパッツァ</td>
+                <td>ポトフ</td>
+            </tr>
+            <tr>
+                <th>主菜</th>
+                <td>パエリア</td>
+                <td>ボロネーゼ</td>
+                <td>フォアグラ</td>
+            </tr>
+            <tr>
+                <th>デザート</th>
+                <td>フラン</td>
+                <td>ティラミス</td>
+                <td>カヌレ</td>
+            </tr>
+        </table>
+    </main>
+    <div class="reservation">
+        <h1>Reservation</h1>
+        <!--<form action="/form.php" method="post">-->
+        <!--get:urlにparameter,個人情報/url長の問題有-page取得 post:page戻ると再送信確認がでる-info送信-->
+        <div>
+            <label for="name">名前</label>
+            <!--label forとinput idを同じにすることでlabelの文字迄反応範囲が広がる-->
+            <input type="text" id="name" name="name" placeholder="Name">
+            <!--id:css.js name:php-->
+        </div>
+        <div>
+            <label for="email">メールアドレス</label>
+            <input type="mail" id="email" name="email" placeholder="Mail Address">
+        </div>
+        <div>
+            <label for="course">コース</label>
+            <!--id重複:coading規約違反,id使用programで動作異常 -->
+            <input type="radio" id="coursea" name="select" value="A">A
+            <input type="radio" id="courseb" name="select" value="B">B
+            <input type="radio" id="coursec" name="select" value="C">C
+        </div>
+        <diV>
+            <label for="branch">支店名</label>
+            <select name="branch" required>
+                <option>スペイン</option>
+                <option>イタリア</option>
+                <option>フランス</option>
+            </select>
+        </div>
+        <div>
+            <label for="person">人数</label>
+            <input type="text" id="person" name="person">
+        </div>
+        <div>
+            <label for="message">コメント</label>
+            <textarea id="message" name="message" placeholder="コメント"></textarea>
+        </div>
+        <div class="consent">
+            <label for="consent">同意する</label>
+            <input type="checkbox" id="consent" name="consent" value="consent" required>
+        </div>
+        <div class="btn01">
+            <input type="submit" value="送信">
+        </div>
+        <!--</form>-->
+    </div>
+</body>
+
+</html>

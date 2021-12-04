@@ -1,0 +1,39 @@
+main, .reservation{
+    width: 360px;
+    margin: 0 auto;
+}
+
+table{
+    border: solid 3px;
+    border-collapse: collapse;
+    /*tableの2行目下線が太いのは仕様*/
+}
+
+table th, td{
+    border: solid 1px;
+}
+
+.reservation div{
+    margin: 10px auto;
+}
+
+label{
+    display: block;
+}
+
+textarea{
+    resize: none;
+    width: 300px;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+.consent{
+    display: flex;
+}
+
+.btn01{
+    width: 102px;
+    /*box-size:42px*/
+    margin: 0 auto;
+}
